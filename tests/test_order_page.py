@@ -24,7 +24,6 @@ class TestOrderPage:
             order_feed_page.click_constructor()
             main_page.drag_and_drop_ingredient()
             order_feed_page.click_place_an_order()
-        time.sleep(10)
         with allure.step('Закрываем окно с деталями'):
             order_feed_page.click_close_order_details()
         with allure.step('Заходим на страницу с заказами'):
@@ -49,7 +48,6 @@ class TestOrderPage:
             order_feed_page.click_constructor()
             main_page.drag_and_drop_ingredient()
             order_feed_page.click_place_an_order()
-        time.sleep(10)
         with allure.step('Закрываем окно с деталями'):
             order_feed_page.click_close_order_details()
         with allure.step('Заходим на страницу с заказами'):
@@ -72,7 +70,6 @@ class TestOrderPage:
             order_feed_page.click_place_an_order()
         with allure.step('Смотрим на id заказа'):
             order_id = order_feed_page.get_order_id_from_details()
-        time.sleep(10)
         with allure.step('Закрываем окно с деталями'):
             order_feed_page.click_close_order_details()
         with allure.step('Заходим на страницу с заказами'):

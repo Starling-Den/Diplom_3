@@ -55,7 +55,6 @@ class TestMainPage:
             main_page.click_ingredient()
         with allure.step('Жмем на крестик'):
             main_page.close_ingredient_details()
-        time.sleep(5)
         with allure.step('Проверяем, что окно с деталями закрылось'):
             assert not main_page.is_ingredient_details_visible()
 
